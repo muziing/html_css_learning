@@ -37,7 +37,7 @@
 2. select下拉表单元素
 3. textarea文本域元素
 
-### \<input>标签
+### \<input>输入
 
 \<input>标签用于收集用户信息
 
@@ -82,4 +82,46 @@
 
 ### \<label>标签
 
-\<label>标签为input元素定义标注（标签）。
+\<label>标签为input元素定义标注（标签）
+
+`<label>`标签用于绑定一个表单元素，当点击\<label>标签内的文本时，浏览器就会自动将焦点（光标）转到或者选择对应的表单元素上，用来改善用户体验
+
+```html
+<label for="sex">男</label>
+<input type="radio" name="sex" id="sex" />
+```
+
+核心：\<label>标签的**for属性**应当与相关元素的**id属性**相同
+
+### \<select>下拉列表
+
+使用场景：在页面中，如果有多个选项让用户选择，并且想要节约页面空间时，我们可以使用`<select>`标签控件定义**下拉列表**
+
+```html
+<select>
+    <option>选项1</option>
+    <option>选项2</option>
+    <option>选项3</option>
+    ...
+</select>
+```
+
+1. \<select>中至少包含一对\<option>
+2. 在\<option>中定义 selected="selected" 时，当前项即为默认选中项
+
+
+
+### \<textarea>文本域
+
+使用场景：当用户输入内容较多的情况下，我们就不能使用文本框表单了，此时我们可以使用`<textarea>`标签
+
+在表单中，`<textarea>`标签是用于定义多行文本输入的控件，常见于留言板、评论。
+
+```html
+<textarea rows="3" cols="20">
+    文本内容
+</textarea>
+```
+
+1. 通过\<textarea>标签可以轻松地创建多行文本输入框
+2. cols="每行中的字符数"，rows="显示的行数"，实际开发中不使用，都是**用CSS来改变大小**

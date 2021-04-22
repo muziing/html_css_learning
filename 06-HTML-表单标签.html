@@ -7,13 +7,15 @@
 <body>
 <form action="demo.php" method="post" name="name1">
     <!-- text 文本框 用户可以在里面输入任何文字 -->
-    用户名：<input type="text" name="username" value="请输入用户名"> <br>
+    <label for="username">用户名：</label><input type="text" name="username" value="请输入用户名" id="username"> <br>
     <!--password 密码-->
     密码：<input type="password" name="pwd"> <br>
     <!-- radio 单选框 可以实现多选一-->
     <!--name 是表单元素名字 这里性别单选按钮必须有相同的名字name 才可以实现多选一-->
     <!-- 单选按钮和复选框可以设置checked属性，当页面打开的时候就可以默认选中这个按钮-->
-    性别： 男<input type="radio" name="sex" value="男" checked> 女<input type="radio" name="sex" value="女"> <br>
+    性别：
+    <label for="nan">男</label><input type="radio" name="sex" value="男" checked id="nan">
+    <label for="nv">女</label><input type="radio" name="sex" value="女" id="nv"> <br>
     <!-- checkbox 复选框 可以多选多-->
     爱好：
     吃饭<input type="checkbox" name="hobby" value="吃饭">
@@ -26,7 +28,22 @@
     <!--普通按钮 button 后期结合js搭配使用-->
     <input type="button" value="一个按钮"> <br>
     <!--文件域 上传文件使用-->
-    上传头像：<input type="file">
+    上传头像：<input type="file"> <br>
+    <br>
+
+    <!--下拉表单-->
+    <h3>下拉表单</h3>
+    <label for="jiguan">籍贯：</label>
+    <select id="jiguan">
+        <option>内蒙古</option>
+        <option>北京</option>
+        <option selected>天津</option>
+        <option>河北</option>
+    </select><br>
+    <br>
+    <!--文本域标签-->
+    <h3>文本域</h3>
+    <textarea></textarea>
 </form>
 </body>
 </html>
