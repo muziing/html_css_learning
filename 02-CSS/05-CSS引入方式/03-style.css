@@ -1,0 +1,6 @@
+/* 在CSS文件中只有样式没有标签 */
+
+div {
+    font-size: 20px;
+    color: cornflowerblue;
+}
