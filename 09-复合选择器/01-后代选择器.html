@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>后代选择器</title>
+    <style>
+        /*想要把ol里面的li选出来*/
+        ol li {
+            color: cornflowerblue;
+        }
+
+        ol li p {
+            color: darkcyan;
+        }
+
+        .nav li p {
+            color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+<ol>
+    <li>我是ol的孩子</li>
+    <li>我是ol的孩子</li>
+    <li>我是ol的孩子</li>
+    <li><p>我是ol的孙子</p></li>
+</ol>
+<ul class="nav">
+    <li>我是ul的孩子</li>
+    <li><p>我是ul的孩子</p></li>
+</ul>
+</body>
+</html>
