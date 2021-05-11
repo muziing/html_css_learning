@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>链接伪类选择器</title>
+    <style>
+
+        /* 未访问的链接 a:link 把没有点击过的（访问过的）链接选出来 */
+        a:link {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /*a:visited 选择点击过的（访问过的）链接*/
+        a:visited {
+            color: orange;
+        }
+
+        /*a:hover 选择鼠标经过的链接*/
+        a:hover {
+            color: cornflowerblue;
+        }
+
+        /*a:active 选择鼠标已经按下，但还没有弹起的那个链接*/
+        a:active {
+            color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+<a href="https://muzing.top">muzing's</a>
+</body>
+</html>
