@@ -1,0 +1,18 @@
+/*把a转换成块元素*/
+a {
+    display: block;
+    background-color: #55585a;
+    width: 230px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+    text-indent: 2em;
+}
+
+/*鼠标经过链接变换背景颜色*/
+
+a:hover {
+    background-color: #ff6700;
+}
