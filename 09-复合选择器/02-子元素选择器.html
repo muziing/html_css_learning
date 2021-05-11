@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>子元素选择器</title>
+    <style>
+        /*如果这样写，则两个a都变色*/
+        /*.nav a {*/
+        /*    color: cornflowerblue;*/
+        /*}*/
+
+        /*如果这样写（子元素选择器），则只有亲儿子被选中*/
+        .nav > a {
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <a href="#">我是儿子</a>
+    <p>
+        <a href="#">我是孙子</a>
+    </p>
+</div>
+</body>
+</html>
