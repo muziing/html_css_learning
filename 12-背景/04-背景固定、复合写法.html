@@ -5,13 +5,19 @@
     <title>背景固定</title>
     <style>
         body {
+            font-size: 20px;
+            color: #fff;
+            /*
             background-image: url(https://oss.muzing.top/image/Nissan-GT-R-white-supercar-back-view_2560x1600.jpg);
             background-repeat: no-repeat;
             background-position: center 0;
+            */
             /*把背景图片固定住*/
-            background-attachment: fixed;
-            font-size: 20px;
-            color: #fff;
+            /*background-attachment: fixed;*/
+
+
+            /*复合写法*/
+            background: cornflowerblue url(https://oss.muzing.top/image/Nissan-GT-R-white-supercar-back-view_2560x1600.jpg) no-repeat fixed center ;
         }
     </style>
 </head>
