@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>权重的叠加</title>
+    <style>
+        /*复合选择器会有权重叠加的问题*/
+        /*权重虽然会有叠加，但是永远不会进位*/
+        li {
+            /*li 的权重是 0,0,0,1*/
+            color: red;
+        }
+
+        ul li {
+            /*ul li 的权重是 0,0,0,1 + 0,0,0,1 = 0,0,0,2*/
+            /*权重大于li的，所以颜色为darkcyan*/
+            color: darkcyan;
+        }
+
+        .nav li {
+            /*.nav li 权重为 0,0,1,0 + 0,0,0,1 = 0,0,1,1*/
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+<ul class="nav">
+    <li>一</li>
+    <li>二</li>
+    <li>三</li>
+</ul>
+</body>
+</html>

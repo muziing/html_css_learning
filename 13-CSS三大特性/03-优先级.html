@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS优先级</title>
+    <style>
+        div {
+            /*color: orange;*/
+            /*加了!important，权重最高*/
+            color: orange !important;
+        }
+
+        .test {
+            /*类选择器权重大于元素选择器*/
+            color: cornflowerblue;
+        }
+
+        #demo {
+            /*id选择器权重更高*/
+            color: darkcyan;
+        }
+
+        #parent {
+            /*虽然parent的权重为0,1,0,0  但是子类继承到的是0*/
+            color: red;
+        }
+
+        p {
+            /*所以元素选择器的权重0001大于0000,显示为粉色*/
+            color: pink;
+        }
+
+        body {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+<div class="test" id="demo" style="color: skyblue">html_css_learning 行内样式表权重更高</div>
+<div id="parent"><p>继承自parent的p.继承的权重是0</p></div>
+<a href="#">我是单独的样式.因为a链接浏览器默认指定了样式（蓝色有下划线），相当于单独选出a并设定样式</a>
+</body>
+</html>
