@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <title>盒子模型之边框</title>
@@ -16,9 +16,59 @@
             /*border-color 边框颜色*/
             border-color: cornflowerblue;
         }
+
+        p {
+            height: 200px;
+            /*边框复合写法*/
+            /*border: 5px solid cornflowerblue;*/
+            /*只设置上边框*/
+            border-top: 5px solid cornflowerblue;
+        }
+
+        table {
+            height: 250px;
+            text-align: center;
+        }
+
+        th {
+            height: 35px;
+        }
+
+        table,
+        td {
+            border: 1px solid cornflowerblue;
+            /*合并相邻的边框*/
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
     </style>
 </head>
 <body>
-<div></div>
+<div>div</div>
+<p>p</p>
+<table>
+    <thead>
+    <tr>
+        <th>自动化等级</th>
+        <th>名称</th>
+        <th>车辆横向和纵向运动控制</th>
+        <th>目标和事件探测与响应</th>
+        <th>动态驾驶任务接管</th>
+        <th>设计运行条件</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>等级3</td>
+        <td>有条件自动驾驶</td>
+        <td>系统</td>
+        <td>系统</td>
+        <td>动态驾驶任务接管用户（接管后成为驾驶员）</td>
+        <td>有限制</td>
+    </tr>
+    </tbody>
+</table>
+<br>
 </body>
 </html>
