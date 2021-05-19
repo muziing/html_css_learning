@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圆角边框</title>
+    <style>
+        div {
+            background-color: cornflowerblue;
+            /*border-radius: 10px;*/
+        }
+
+        .circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .rond-rtg {
+            /*圆角半径设置为高度的一半*/
+            width: 350px;
+            height: 150px;
+            border-radius: 75px;
+        }
+
+        .radius {
+            height: 200px;
+            width: 200px;
+            /*写4个数值，从左上开始顺时针四个角到左下结束*/
+            /*border-radius: 10px 20px 30px 40px;*/
+
+            /*写2个数值，左上右下对应第一个数值，右上左下对应第二个数值*/
+            border-radius: 10px 40px;
+
+            /*也可以分开单独设置*/
+            /*border-top-left-radius: 10px;*/
+        }
+    </style>
+</head>
+<body>
+<div></div>
+1.圆形的做法：
+<div class="circle"></div>
+圆角矩形的做法：
+<div class="rond-rtg"></div>
+3.可以设置不同的圆角
+<div class="radius"></div>
+</body>
+</html>
