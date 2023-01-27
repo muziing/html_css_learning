@@ -4,25 +4,21 @@
 
 背景属性可以设置背景颜色。背景图片、背景平铺、背景图片位置、背景图像固定等
 
-
-
 ## 背景颜色
 
 **background-color**属性定义了元素的背景颜色。
 
-```
+```css
 background-color: 颜色值;
 ```
 
 一般情况下背景颜色默认值是**transparent**（透明），我们也可以手动指定背景颜色为透明
 
-
-
 ## 背景图片
 
 **background-image**属性描述了元素的背景图像。实际开发中常用于logo、一些装饰性的小图片或者超大的背景图片，优点是非常便于控制位置。（精灵图也是一种运用场景）
 
-```
+```css
 background-image: none | url ()
 ```
 
@@ -31,25 +27,21 @@ background-image: none | url ()
 | none   | 无背景图（默认的）             |
 | url    | 使用绝对或相对地址指定背景图像 |
 
-
-
 ## 背景平铺
 
 如果需要在HTML页面上对背景图片进行平铺，可以使用**background-repeat**属性。
 
-```
+```css
 background-repeat: repeat | no-repeat | repeat-x | repeat-y
 ```
 
 页面元素可以同时添加背景图片和背景颜色，只不过背景图片会压住背景颜色
 
-
-
 ## 背景图片位置
 
 利用**background-position**属性可以改变在背景中的位置
 
-```
+```css
 background-position: x y;
 ```
 
@@ -60,8 +52,6 @@ background-position: x y;
 | length   | 百分数 \| 由浮点数字和单位标识符组成的长度值                |
 | position | top \| center \| bottom \| left \| center \| right 方位名词 |
 
-
-
 1. 参数是方位名词
    - 如果指定的两个值都是方位名词，则两个值前后顺序无关。比如left top和top left效果一致
    - 如果只指定了一个方位名词，另一个省略，则第二个值默认居中对齐
@@ -71,15 +61,13 @@ background-position: x y;
 3. 参数是混合单位
    - 方位名词和精确单位混合使用，则第一个值是x坐标，第二个值是y坐标
 
-
-
 ## 背景图像固定（背景附着）
 
 **background-attachment**属性设置背景图像是否固定或者随着页面的其余部分滚动。
 
 background-attachment 后期可以制作视差滚动的效果。
 
-```
+```css
 background-attachment : scroll | fixed
 ```
 
@@ -87,8 +75,6 @@ background-attachment : scroll | fixed
 | ------ | -------------------------- |
 | scroll | 背景图像是随着对象内容滚动 |
 | fixed  | 背景图像固定               |
-
-
 
 ## 背景复合写法
 
@@ -98,13 +84,11 @@ background-attachment : scroll | fixed
 
 **background: 背景颜色 背景图片地址 背景平铺 背景图像滚动 背景图片位置;**
 
-
-
 ## 背景色半透明
 
 CSS 3 为我们提供了背景颜色半透明的效果。
 
-```
+```css
 background: rgba(0, 0, 0, 0.3);
 ```
 
